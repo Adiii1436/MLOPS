@@ -22,7 +22,7 @@ def clean_df(df: pd.DataFrame) -> Tuple[
         X_train, X_test, y_train, y_test = data_divide.handle_data()
         logging.info("Data cleaning completed")
 
-        # return X_train, X_test, y_train, y_test
+        return X_train, X_test, y_train, y_test
 
     except Exception as e:
         logging.error(f'Unable to clean data')
